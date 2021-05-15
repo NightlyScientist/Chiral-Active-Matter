@@ -1,7 +1,7 @@
 ---
 authors: ["JImmy Gonzalez Nunez", "Subhaya Bose", "Arya Rajan"]
 university: "University of California, Merced"
-date: Spring 2021
+date: May 14, 2021
 ---
 
 # Chrial Active Matter
@@ -53,4 +53,4 @@ To change the save directory, use
 > --dirname "path_to_your_directory"
 
 
-[active-dimers]: www.pnas.org/cgi/doi/10.1073/pnas.1609572113 "Spatiotemporal order and emergent edge currents in active spinner materials"
+[active-dimers]: https://doi.org/10.1073/pnas.1609572113 "Spatiotemporal order and emergent edge currents in active spinner materials"
