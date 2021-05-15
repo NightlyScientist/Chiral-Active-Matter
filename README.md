@@ -1,5 +1,5 @@
 ---
-authors: ["JImmy Gonzalez Nunez", "Subhaya Bose", "Arya Rajan"]
+authors: ["JImmy Gonzalez Nunez", "Subhaya Bose", "Arya Karappilly Rajan"]
 university: "University of California, Merced"
 date: May 14, 2021
 ---
@@ -35,15 +35,15 @@ directory. Within the _/src_ directory, use
 
 > Python main.py --help
 
-to see all available command line flags. As an example, let's study the
-behaviour of a system of $64$ rods at a packing fraction near $0.1$. We shall
+to see all available command-line flags. As an example, let's study the
+behaviour of a system of 64 rods at a packing fraction near 0.1. We shall
 _animate_ the system, calculate the _spatial correlation_ function, and tell our
 script to print lots of information to the terminal (std):
 
 > python main.py --phi 0.1 --verbose --animate --spatialCorr --frames 10 --spf
 > 100 --color_orientation
 
-here we are capturing only $10$ frames, with $100$ time steps between each
+here we are capturing only 10 frames, with 100 time steps between each
 frame, and coloring the rods by their nematic orientation. We can save the
 results (and supress showing animation at the end of the run) by calling the
 _--save_ flag.
@@ -60,7 +60,7 @@ If the simualtion goes well, we should see the following animation:
   src = "./media-examples/animation.gif"
   alt = "test glob"
   style = "border: 5px solid black; margin-left: auto; margin-right: auto;
-  display: block; width: 50%"
+  display: block; width: 80%"
 />
 
 <!-- #### Plotting rods as four beads
@@ -75,10 +75,10 @@ If the simualtion goes well, we should see the following animation:
 #### Plotting only the center of mass (--CoM)
 
 <img
-  src = "./media-examples/com.png"
+  src = "./media-examples/animation_com.gif"
   alt = "test glob"
   style = "border: 5px solid black; margin-left: auto; margin-right: auto;
-  display: block; width: 50%"
+  display: block; width: 80%"
 />
 
 
