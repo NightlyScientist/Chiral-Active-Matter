@@ -1,0 +1,20 @@
+# ignore Data/ folder
+__pycache__/
+Images/
+images/
+Data/
+Simulation-Data/
+Samples/
+*.gif
+*.jpg
+*.png
+*.PNG
+*.log
+*.dat
+*.data
+*.pdf
+*.html
+.vscode/
+.vim/
+.empty/
+.DS_Store
