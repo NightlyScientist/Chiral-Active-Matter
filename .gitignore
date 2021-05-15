@@ -12,7 +12,7 @@ Samples/
 *.log
 *.dat
 *.data
-*.pdf
+#*.pdf
 *.html
 *.mp4
 .vscode/
