@@ -6,9 +6,9 @@ Data/
 Simulation-Data/
 Samples/
 # *.gif
-*.jpg
+# *.jpg
 # *.png
-*.PNG
+# *.PNG
 *.log
 *.dat
 *.data
