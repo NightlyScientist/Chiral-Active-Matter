@@ -25,7 +25,7 @@ We explore the effects of particle geometry on the emergent phase behaviour.
 - numba 0.53.1+
 - celluloid 0.2.0+
 - matplotlib 3.4.2+
-- argparse
+- argparse 3.2+
 - numexpr 2.7.3+
 
 ### Run Python Script
