@@ -52,5 +52,36 @@ To change the save directory, use
 
 > --dirname "path_to_your_directory"
 
+### Media Examples
+
+If the simualtion goes well, we should see the following animation:
+
+<img
+  src = "./media-examples/animation.gif"
+  alt = "test glob"
+  style = "border: 5px solid black; margin-left: auto; margin-right: auto;
+  display: block; width: 50%"
+/>
+
+<!-- #### Plotting rods as four beads
+
+<img
+  src = "./media-examples/rods.png"
+  alt = "test glob"
+  style = "border: 5px solid black; margin-left: auto; margin-right: auto;
+  display: block; width: 50%"
+/> -->
+
+#### Plotting only the center of mass (--CoM)
+
+<img
+  src = "./media-examples/com.png"
+  alt = "test glob"
+  style = "border: 5px solid black; margin-left: auto; margin-right: auto;
+  display: block; width: 50%"
+/>
+
+
+
 
 [active-dimers]: https://doi.org/10.1073/pnas.1609572113 "Spatiotemporal order and emergent edge currents in active spinner materials"

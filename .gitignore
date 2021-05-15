@@ -5,15 +5,16 @@ images/
 Data/
 Simulation-Data/
 Samples/
-*.gif
+# *.gif
 *.jpg
-*.png
+# *.png
 *.PNG
 *.log
 *.dat
 *.data
 *.pdf
 *.html
+*.mp4
 .vscode/
 .vim/
 .empty/

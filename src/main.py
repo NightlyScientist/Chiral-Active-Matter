@@ -89,11 +89,11 @@ if args.verbose:
     print(f"   > number of particles: {nparticles}\n")
     print(f"   > box size: {BoxL}\n")
     print(f"   > frames, spf, and fps: {args.frames}, {args.spf}, {args.fps}\n")
-    print(f"   > using {args.initMethod.lower()} initialization")
+    print(f"   > using {args.initMethod.lower()} initialization\n")
     if args.save and args.animate:
-        print(f"   > saving animation to {args.dirname}")
+        print(f"   > saving animation to {args.dirname}\n")
     elif args.animate and not args.save:
-        print(f"   > animation will be made and displayed, but not saved")
+        print(f"   > animation will be made and displayed, but not saved\n")
     print("  ------------------\n")
 
 idxs = np.array(list(range(len(ptcls))))
@@ -199,7 +199,7 @@ plt.title(rf"$\phi = {metrics.packingFraction(BoxL, nparticles, sigma):.2f}$")
 if args.animate:
     anim = camera.animate()
     if args.save:
-        anim.save(f"{args.dirname}/animation_nparticles_{nparticles}_omega{alpha:.2f}_phi_{packFrac:.3f}.mp4", writer="ffmpeg", fps=args.fps)
+        anim.save(f"{args.dirname}/animation_nparticles_{nparticles}_omega{alpha:.2f}_phi_{packFrac:.3f}.gif", writer="ffmpeg", fps=args.fps)
     else:
         plt.show()
 
@@ -213,6 +213,6 @@ if args.spatialCorr:
     grax.set_ylabel(r"$g(r)$")
     grax.set_xlabel("radius")
     if args.save:
-        fig.save(f"{args.dirname}/spatial-correlation.png")
+        fig.savefig(f"{args.dirname}/spatial-correlation.png")
     else:
         plt.show()
