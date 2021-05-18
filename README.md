@@ -58,16 +58,16 @@ beads, subject to both a volume-exclusion spring force and a short-range yukawa
 force with screening length of a bead diameter and cut off of four bead
 diameters. Equations are shown in the pdf slides in the $/presentation$ folder.
 
-The relevant parameters of the model are:
+The relevant parameters of the model are (paramters we used indicated in brackets):
 
-- temperature: T
-- roatational diffusion: D_R
-- translational diffusion: D_T
-- **packing fractio**n: phi
-- **number of particles**: n
-- friction coefficient: gamma
-- bead diameter: sigma
-- intrinsic angular velocity: alpha
+- temperature: T [0.002]
+- roatational diffusion: D_R [0.05]
+- translational diffusion: D_T [0.05]
+- **packing fractio**n: phi [0.0-0.8]
+- **number of particles**: [100]
+- friction coefficient: gamma [1.0]
+- bead diameter: sigma [1.0]
+- intrinsic angular velocity: alpha [0.05]
 
 In order to study the effects of packing fraction on phase behaviour, we have
 currently only implemented the bold paramters listed above (packing fraction and

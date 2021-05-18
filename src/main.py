@@ -85,7 +85,7 @@ rat_gam = 1.0 * sigma ** 2
 # rotational and translational diffusion constants
 D_T = 0.05
 D_R = 0.05
-D_T = np.sqrt(2.0 * D_T * dt)
+D_T = np.sqrt(2.0 * D_T * dt) # TODO  :fix coeff
 D_R = np.sqrt(2.0 * D_R * dt)
 
 # interaction cut off dist
