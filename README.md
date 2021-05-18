@@ -43,16 +43,47 @@ script to print lots of information to the terminal (std):
 > python main.py --phi 0.1 --verbose --animate --spatialCorr --frames 10 --spf
 > 100 --color_orientation
 
-here we are capturing only 10 frames, with 100 time steps between each
-frame, and coloring the rods by their nematic orientation. We can save the
-results (and supress showing animation at the end of the run) by calling the
-_--save_ flag.
+here we are capturing only 10 frames, with 100 time steps between each frame,
+and coloring the rods by their nematic orientation. We can save the results (and
+supress showing animation at the end of the run) by calling the _--save_ flag.
 
 To change the save directory, use
 
 > --dirname "path_to_your_directory"
 
-### Media Examples
+### Simulation Parameters
+
+Our model consists of modeling actively rotating rods as rigid chains of 4
+beads, subject to both a volume-exclusion spring force and a short-range yukawa
+force with screening length of a bead diameter and cut off of four bead
+diameters. Equations are shown in the pdf slides in the $/presentation$ folder.
+
+The relevant parameters of the model are:
+
+- temperature: T
+- roatational diffusion: D_R
+- translational diffusion: D_T
+- **packing fractio**n: phi
+- **number of particles**: n
+- friction coefficient: gamma
+- bead diameter: sigma
+- intrinsic angular velocity: alpha
+
+In order to study the effects of packing fraction on phase behaviour, we have
+currently only implemented the bold paramters listed above (packing fraction and
+number of particles) as directly slectable parameteres via the command-line, the
+remaining paramters need to be altered within the 'main.py' script.
+
+In our test cases, we considered a system of 100 rods (4 x 100 beads) and found
+that 500,000 time steps takes approximately 20 minutes on a single thread
+(multi-threading to be added in future updates) using an 10th gen intel i7
+mobile processor.
+
+We found that the current implementation of the model is stable for packing
+fractions in the range of 0.0 - 0.8, where the box size changes based on the
+specified number of particles and packing fraction desired.
+
+## Media Examples
 
 If the simualtion goes well, we should see the following animation:
 
@@ -81,7 +112,6 @@ If the simualtion goes well, we should see the following animation:
   display: block; width: 80%"
 />
 
-
-
-
-[active-dimers]: https://doi.org/10.1073/pnas.1609572113 "Spatiotemporal order and emergent edge currents in active spinner materials"
+[active-dimers]:
+  https://doi.org/10.1073/pnas.1609572113
+  "Spatiotemporal order and emergent edge currents in active spinner materials"

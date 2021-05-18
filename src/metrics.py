@@ -1,11 +1,14 @@
 import numpy as np
 import numexpr as ne
 
+
 def packingFraction(BoxL, nParticles, sigma):
-    return np.pi*nParticles*sigma**2/BoxL**2
+    return np.pi * nParticles * sigma ** 2 / BoxL ** 2
+
 
 def phi_6():
     pass
+
 
 def TwoPointCorr(x, y, S, rMax, dr):
     print(f"  ! calculating g(r) using S, rmax, dr of ({S}, {rMax:.4f}, {dr:.4f})\n")
@@ -20,7 +23,6 @@ def TwoPointCorr(x, y, S, rMax, dr):
     if nInterPart < 1:
         print("  !! rMax is too large!\n")
         return [], [], []
-
 
     edges = np.arange(0.0, rMax + 1.1 * dr, dr)
     nIncrements = len(edges) - 1
@@ -45,10 +47,12 @@ def TwoPointCorr(x, y, S, rMax, dr):
 
     return (gAvg, radii, interiorIndices)
 
+
 def cut_arrow(c, v, BoxL):
     if v + c >= BoxL:
         return BoxL - c
     elif v + c >= -BoxL:
         return -c
     else:
-        return c+v
+        return c + v
+
